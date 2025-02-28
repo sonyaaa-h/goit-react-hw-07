@@ -2,11 +2,11 @@ import s from "./Contact.module.css";
 import { IoMdContact } from "react-icons/io";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
-import { deleteContact, editContact } from "../../redux/contactsSlice";
 import { useState } from "react";
 import { CiEdit } from "react-icons/ci";
 import { MdDownloadDone } from "react-icons/md";
 import { RiDeleteBinLine } from "react-icons/ri";
+import { deleteContact, editContact } from "../../redux/contactsOps";
 
 const Contact = ({ id, name, phone }) => {
     const dispatch = useDispatch();
@@ -24,7 +24,7 @@ const Contact = ({ id, name, phone }) => {
                             defaultValue={name}
                             onChange={(e) => setNameValue(e.target.value)}
                             onBlur={() => {
-                                dispatch(editContact({ id, name: nameValue, phone }));
+                                dispatch(editContact({ id, name: nameValue, phone: phoneValue }));
                             }}
                         />
                         <input

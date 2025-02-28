@@ -22,7 +22,6 @@ const dispatch = useDispatch();
                     placeholder="Search contacts"
                     onChange={(e) =>{
                         dispatch(changeFilter(e.target.value))
-                        console.log(e.target.value);
                         
                     }}
                 />
