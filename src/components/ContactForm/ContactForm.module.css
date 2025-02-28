@@ -1,0 +1,52 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    border: 2px solid #a3477d;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 4px #d3d3d3;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputWrapper label {
+    font-size: 16px;
+}
+
+.inputWrapper input {
+    padding: 10px 5px;
+    border: 1px solid #a3477d;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.addContactBtn {
+    padding: 10px 10px;
+    border: 1px solid #a3477d;
+    border-radius: 5px;
+    background-color: #f3ebf0;
+    color: #a3477d;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    margin: 10px auto 0;
+
+    transition: all 0.3s ease;
+}
+
+.addContactBtn:hover {
+    background-color: #a3477d;
+    color: #f3ebf0;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}

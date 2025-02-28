@@ -1,0 +1,52 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding: 10px;
+    border: 2px solid #a3477d;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 4px #d3d3d3;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.iconWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconWrapper p {
+    font-size: 18px;
+}
+
+.button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #a3477d;
+    color: #f3ebf0;
+
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f3ebf0;
+    color: #a3477d;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
